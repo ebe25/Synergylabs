@@ -1,0 +1,141 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* App Container */
+  .App {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* User List */
+  .users-list {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  .users-list h1 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  /* User Cards Container */
+  .user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* User Card */
+  .user-card {
+    position: relative;
+    width: calc(33.33% - 10px); /* To account for the gap */
+    margin: 5px;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* User Card Content */
+  .user-card-content {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* User Card Buttons */
+  .user-card-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* User Buttons */
+  .user-card-buttons button {
+    padding: 8px 15px;
+    background-color: #00aaff; /* Blue (Sky) */
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-card-buttons button:hover {
+    background-color: #0077cc; /* Darker blue on hover */
+  }
+  
+  /* Create/Edit User Form */
+  .create-user,
+  .edit-user-adjacent {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid #ccc; /* Grey border */
+    border-radius: 5px;
+    background-color: #2b2b2b; /* Dark grey background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .create-user h2,
+  .edit-user-adjacent h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .create-user input,
+  .edit-user-adjacent input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Grey border */
+    border-radius: 3px;
+    background-color: #555; /* Dark grey background */
+    color: #ffffff;
+  }
+  
+  .create-user button,
+  .edit-user-adjacent button {
+    padding: 8px 15px;
+    background-color: #00aaff; /* Blue (Sky) */
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-user button:hover,
+  .edit-user-adjacent button:hover {
+    background-color: #0077cc; /* Darker blue on hover */
+  }
+  
+  /* Edit User Adjacent */
+  .edit-user-adjacent {
+    position: absolute;
+    top: 0;
+    right: calc(100% + 10px); /* Adjust as needed */
+    width: 300px; /* Adjust as needed */
+    background-color: #2b2b2b; /* Dark grey background */
+    padding: 10px;
+    border: 1px solid #ccc; /* Grey border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    color: #ffffff;
+    transition: right 0.3s ease; /* Smoother animation */
+  }
+  
